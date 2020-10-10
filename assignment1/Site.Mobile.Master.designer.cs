@@ -7,7 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace assignment1 {
+namespace ABCBooks_JaesungLee
+{
     
     
     public partial class Site_Mobile {

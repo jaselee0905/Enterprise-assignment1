@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace assignment1
+namespace ABCBooks_JaesungLee
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
@@ -21,23 +21,23 @@ namespace assignment1
 
         protected void btnShow_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Landing.aspx");
+            Response.Redirect("ShowAll.aspx");
         }
 
         protected void btnAuthor_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ListAuthor.axpx");
+            Response.Redirect("ListAuthor.aspx");
         }
 
         protected void btnTitle_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ListTitle.axpx");
+            Response.Redirect("ListTitle.aspx");
 
         }
 
         protected void btnExp_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Expensive.axpx");
+            Response.Redirect("Expensive.aspx");
 
         }
     }

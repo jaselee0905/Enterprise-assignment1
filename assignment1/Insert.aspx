@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Insert.aspx.cs" Inherits="assignment1.Insert" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Insert.aspx.cs" Inherits="ABCBooks_JaesungLee.Insert" %>
 
 <!DOCTYPE html>
 
@@ -15,7 +15,11 @@
     <h1>Insert Book</h1>
     <form id="form1" runat="server">
     <div>
-        <asp:Button ID="btnHome" runat="server" OnClick="btnHome_click" Text="Home" />
+        <asp:Button ID="btnHome" runat="server" OnClick="btnHome_click" Text="Home" CausesValidation="false" />
+        &nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnShow" runat="server" Text="Show All Books" OnClick="btnShow_Click" CausesValidation="false"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="lbSuccess" runat="server" ForeColor="Black" Text="Submission Sucessful!" Visible="False"></asp:Label>
     </div>
         <br />
         <label>* = Required</label>
@@ -35,7 +39,7 @@
                 <td><asp:TextBox ID="tbISBN" runat="server"></asp:TextBox></td>
                 <td>
                     <asp:RequiredFieldValidator ID="rfvISBN" runat="server" ControlToValidate="tbISBN" ErrorMessage="ISBN number field cannot be empty">*</asp:RequiredFieldValidator>
-                    <asp:RangeValidator ID="rvISBN" runat="server" ControlToValidate="tbISBN" ErrorMessage="ISBN must be numerical Value" MaximumValue="999999" MinimumValue="0" Type="Integer"></asp:RangeValidator>
+                    <asp:RangeValidator ID="rvISBN" runat="server" ControlToValidate="tbISBN" ErrorMessage="ISBN must be numerical Value" MaximumValue="99999999" MinimumValue="0" Type="Integer"></asp:RangeValidator>
                 </td>
             </tr>
             <tr>
@@ -66,7 +70,7 @@
                 </td>
             </tr>
             <tr>
-                <td><input id="Submit1" type="submit" value="submit" style="width:100%"/></td>
+                <td><asp:Button ID="btnSubmit" runat="server" Text="Submit" style="width:100%" OnClick="btnSubmit_Click"/></td>
                 <td><input id="Reset1" type="reset" value="reset" style="width:100%"/></td>
             </tr>
         </table>

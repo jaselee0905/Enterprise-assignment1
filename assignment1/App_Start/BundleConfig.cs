@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Optimization;
 using System.Web.UI;
 
-namespace assignment1
+namespace ABCBooks_JaesungLee
 {
     public class BundleConfig
     {

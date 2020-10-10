@@ -7,7 +7,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace assignment1
+namespace ABCBooks_JaesungLee
 {
     public class Global : HttpApplication
     {

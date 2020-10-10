@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Landing.aspx.cs" Inherits="assignment1.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Landing.aspx.cs" Inherits="ABCBooks_JaesungLee.WebForm1" %>
 
 <!DOCTYPE html>
 
@@ -17,15 +17,16 @@
             Your Id: 991495134</p>
         Instructor’s name: Syed Tanbee<p>
         </p>
-    </form>
-    <table style="width:75%;">
+        <br />
+        <table style="width:75%;">
         <tr>
-            <td><asp:Button ID="Button1" runat="server" OnClick="btnInsert_click" Text="Insert" style="width:100%"/></td>
+            <td><asp:Button ID="btnInsert" runat="server" OnClick="btnInsert_click" Text="Insert" style="width:100%"/></td>
             <td><asp:Button ID="btnShow" runat="server" OnClick="btnShow_Click" Text="Show All" style="width:100%"/></td>
             <td><asp:Button ID="btnAuthor" runat="server" Text="Book list by Author" OnClick="btnAuthor_Click" style="width:100%"/></td>
             <td><asp:Button ID="btnTitle" runat="server" Text="Book info Title" OnClick="btnTitle_Click" style="width:100%"/></td>
             <td><asp:Button ID="btnExp" runat="server" Text="Expensive Books" OnClick="btnExp_Click" style="width:100%"/></td>
         </tr>
     </table>
+    </form>
 </body>
 </html>

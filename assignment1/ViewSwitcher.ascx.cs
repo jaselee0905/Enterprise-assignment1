@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.FriendlyUrls.Resolvers;
 
-namespace assignment1
+namespace ABCBooks_JaesungLee
 {
     public partial class ViewSwitcher : System.Web.UI.UserControl
     {
